@@ -1,0 +1,55 @@
+Zeegur
+
+Generic
+- Id - Guid
+- CreationTime - DateTime
+- UpdateTime- DateTime
+
+Account
+- Email - String
+- LegalId - String
+- Phone - String
+- Password - String
+- Stauts - AccountStatus
+- Profile - AccountEnum
+
+AccountDetails
+- Name - String
+- LastName - String
+- BirthDate - DateTime
+
+Wallet
+- AccountId - Guid
+- Amount - Decimal
+
+Plans
+- Name - String
+- Description - String
+- Value - Decimal
+- Status - PlanStatus
+
+AccountPlans
+- AccountId - Guid
+- PlanId - Guid
+- PaymentMethod - String
+- LastPayment - DateTime
+- NextPayment - DateTime
+- MaxGroupes - Int
+- MaxUsers - Int
+
+Groupe
+- Name - String
+- Description - String
+- Icon - GroupeIcon
+- MembersCount - Int
+
+AccountGroupe
+- AccountId - Guid
+- GroupeId - Guid
+- MainCode - String
+- DynamicCode - String
+
+Report
+- AccountId - Guid
+- Title - String
+- Description - String
